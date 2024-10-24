@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"> <!-- Background color -->
+
+    <ListView
+        android:id="@+id/clientsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       /> <!-- Spacing between items -->
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя клиента"
+        android:layout_marginBottom="8dp"
+
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Телефон клиента"
+        android:layout_marginBottom="8dp"
+
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:id="@+id/keyNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Номер ключа"
+
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        />
+
+    <Button
+        android:id="@+id/registerClientButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрировать клиента"
+      />
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выйти"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
